@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reinaku Baresha</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Reinaku Baresha</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+            <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+            <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+            <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+            <div class="lang-switch">
+                <span class="lang-option active" data-lang="id">ID</span>
+                <span class="lang-option" data-lang="en">EN</span>
+            </div>
+            <label class="btn btn-icon" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </label>
+            <button class="btn btn-secondary" id="translateBtn"><i class="fas fa-exchange-alt"></i> <span data-i18n="nav.translate">Terjemahan</span></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="hero.title">Dahani Dahanai Tuntung Tulus</h1>
+                <p data-i18n="hero.subtitle">Selamat datang di website Reinaku Baresha.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary" data-i18n="hero.getStarted">Mulai</button>
+                    <button class="btn btn-outline" data-i18n="hero.learnMore">Pelajari Lebih</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Assets/Img/logo_barsel.png" alt="Translation Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-title">
+            <h2 data-i18n="about.title">Tentang</h2>
+            <p></p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Assets/Img/background.jpg" alt="About Ron & Rei">
+            </div>
+            <div class="about-text">
+                <h3 data-i18n="about.heading">Mengenal 4 Bahasa Daerah Dominan di Barito Selatan</h3>
+                <p data-i18n="about.paragraph1">Kabupaten Barito Selatan terletak di Provinsi Kalimantan Tengah dan merupakan wilayah dengan keragaman etnis dan bahasa yang kaya. Mayoritas penduduknya berasal dari Suku Dayak, dengan beberapa sub-suku seperti Bakumpai, Dusun (Dusun Witu), Ma'anyan dan Ngaju. Selain itu, terdapat pula komunitas Banjar dan pendatang dari daerah lain.</p>
+                <p data-i18n="about.paragraph2">Bahasa-bahasa daerah di Barito Selatan termasuk dalam rumpun bahasa Austronesia dengan ciri khas struktur dan kosakata yang unik. Meskipun Bahasa Indonesia digunakan dalam komunikasi resmi, bahasa daerah tetap hidup dalam percakapan sehari-hari, upacara adat dan tradisi lisan.</p>
+            </div>
+        </div>
+        <div class="about-features">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-text">
+                    <h4 data-i18n="feature.bakumpai.title">Bahasa Bakumpai</h4>
+                    <div class="feature-detail">
+                        <span class="feature-label" data-i18n="feature.label.tribe">Suku :</span>
+                        <span class="feature-value" data-i18n="feature.bakumpai.tribe">Dayak Bakumpai</span>
+                        <span class="feature-label" data-i18n="feature.label.location">Lokasi :</span>
+                        <span class="feature-value" data-i18n="feature.bakumpai.location">Sepanjang Sungai Barito (Jenamas, Dusun Selatan)</span>
+                        <span class="feature-label" data-i18n="feature.label.characteristic">Ciri :</span>
+                        <span class="feature-value" data-i18n="feature.bakumpai.characteristic">Mirip Bahasa Banjar</span>
+                        <span class="feature-label" data-i18n="feature.label.example">Contoh :</span>
+                        <span class="feature-value" data-i18n="feature.bakumpai.example">"Kakah" (kakak), "Bujur" (baik)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-text">
+                    <h4 data-i18n="feature.dusun.title">Bahasa Dusun Witu</h4>
+                    <div class="feature-detail">
+                        <span class="feature-label" data-i18n="feature.label.tribe">Suku :</span>
+                        <span class="feature-value" data-i18n="feature.dusun.tribe">Dayak Dusun Witu</span>
+                        <span class="feature-label" data-i18n="feature.label.location">Lokasi :</span>
+                        <span class="feature-value" data-i18n="feature.dusun.location">Dusun Selatan</span>
+                        <span class="feature-label" data-i18n="feature.label.characteristic">Ciri :</span>
+                        <span class="feature-value" data-i18n="feature.dusun.characteristic">Berbeda dengan Dusun Sabah/Malaysia dan mirip bahasa Ma'anyan</span>
+                        <span class="feature-label" data-i18n="feature.label.example">Contoh :</span>
+                        <span class="feature-value" data-i18n="feature.dusun.example">"Bakoi/koi" (tidak), "Ajoh" (banyak)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-text">
+                    <h4 data-i18n="feature.maanyan.title">Bahasa Ma'anyan</h4>
+                    <div class="feature-detail">
+                        <span class="feature-label" data-i18n="feature.label.tribe">Suku :</span>
+                        <span class="feature-value" data-i18n="feature.maanyan.tribe">Dayak Ma'anyan</span>
+                        <span class="feature-label" data-i18n="feature.label.location">Lokasi :</span>
+                        <span class="feature-value" data-i18n="feature.maanyan.location">Gunung Bintang Awai</span>
+                        <span class="feature-label" data-i18n="feature.label.characteristic">Ciri :</span>
+                        <span class="feature-value" data-i18n="feature.maanyan.characteristic">Ada kaitan dengan bahasa Madagaskar</span>
+                        <span class="feature-label" data-i18n="feature.label.example">Contoh :</span>
+                        <span class="feature-value" data-i18n="feature.maanyan.example">"Inun" (Apa), "Maharati" (baik)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-text">
+                    <h4 data-i18n="feature.ngaju.title">Bahasa Ngaju</h4>
+                    <div class="feature-detail">
+                        <span class="feature-label" data-i18n="feature.label.tribe">Suku :</span>
+                        <span class="feature-value" data-i18n="feature.ngaju.tribe">Dayak Ngaju</span>
+                        <span class="feature-label" data-i18n="feature.label.location">Lokasi :</span>
+                        <span class="feature-value" data-i18n="feature.ngaju.location">Penyebaran luas di Kalteng</span>
+                        <span class="feature-label" data-i18n="feature.label.characteristic">Ciri :</span>
+                        <span class="feature-value" data-i18n="feature.ngaju.characteristic">Dominan, digunakan dalam ritual Tiwah</span>
+                        <span class="feature-label" data-i18n="feature.label.example">Contoh :</span>
+                        <span class="feature-value" data-i18n="feature.ngaju.example">"Pahari" (keluarga), "ha'i" (besar)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="section-title">
+            <h2 data-i18n="services.title">Layanan</h2>
+            <p data-i18n="services.subtitle">Menyediakan Terjemahan 4 Bahasa Domoinan di Kabupaten Barito Selatan</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="service-content">
+                    <h3 data-i18n="services.bakumpai.title">Terjemahan Bakumpai</h3>
+                    <p data-i18n="services.bakumpai.description">Terjemahan profesional antara Bahasa Indonesia dan Bahasa Bakumpai dengan sensitivitas budaya.</p>
+                    <button class="btn btn-outline" id="translateBtn1"><span data-i18n="services.translate">Terjemahan</span></button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="service-content">
+                    <h3 data-i18n="services.dusun.title">Terjemahan Dusun Witu</h3>
+                    <p data-i18n="services.dusun.description">Terjemahan akurat Bahasa Dusun untuk dokumen, media, dan komunikasi pribadi.</p>
+                    <button class="btn btn-outline" id="translateBtn2"><span data-i18n="services.translate">Terjemahan</span></button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="service-content">
+                    <h3 data-i18n="services.maanyan.title">Terjemahan Ma'anyan</h3>
+                    <p data-i18n="services.maanyan.description">Terjemahan ahli Bahasa Ngaju untuk keperluan budaya, hukum, dan pendidikan.</p>
+                    <button class="btn btn-outline" id="translateBtn3"><span data-i18n="services.translate">Terjemahan</span></button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="service-content">
+                    <h3 data-i18n="services.ngaju.title">Terjemahan Ngaju</h3>
+                    <p data-i18n="services.ngaju.description">Terjemahan ahli Bahasa Ngaju untuk keperluan budaya, hukum, dan pendidikan.</p>
+                    <button class="btn btn-outline" id="translateBtn4"><span data-i18n="services.translate">Terjemahan</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Translation Modal (for navbar button) -->
+    <div class="modal" id="translationModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </div>
+            <h3 class="modal-title" data-i18n="modal.title">TERJEMAHAN KATA</h3>
+            <form id="translationForm">
+                <div class="form-group">
+                    <label for="inputText" data-i18n="modal.inputLabel">Masukkan Kata:</label>
+                    <input type="text" id="inputText" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="outputText" data-i18n="modal.outputLabel">Terjemahan:</label>
+                    <input type="text" id="outputText" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="direction" data-i18n="modal.directionLabel">Pilih Bahasa:</label>
+                    <select id="direction" class="form-control" required>
+                        <option value="id_to_bakumpai" data-i18n="modal.idToBakumpai">Indonesia - Bakumpai</option>
+                        <option value="bakumpai_to_id" data-i18n="modal.bakumpaiToId">Bakumpai - Indonesia</option>
+                        <option value="id_to_dusun" data-i18n="modal.idToDusun">Indonesia - Dusun Witu</option>
+                        <option value="dusun_to_id" data-i18n="modal.dusunToId">Dusun Witu - Indonesia</option>
+                        <option value="id_to_maanyan" data-i18n="modal.idToMaanyan">Indonesia - Maanyan</option>
+                        <option value="maanyan_to_id" data-i18n="modal.maanyanToId">Maanyan - Indonesia</option>
+                        <option value="id_to_ngaju" data-i18n="modal.idToNgaju">Indonesia - Ngaju</option>
+                        <option value="ngaju_to_id" data-i18n="modal.ngajuToId">Ngaju - Indonesia</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="modal.translateButton">Terjemahkan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bakumpai Translation Modal -->
+    <div class="modal" id="bakumpaiModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeBakumpaiModal">
+                <i class="fas fa-times"></i>
+            </div>
+            <h3 class="modal-title" data-i18n="modal.bakumpaiTitle">TERJEMAHAN BAKUMPAI</h3>
+            <form id="bakumpaiForm">
+                <div class="form-group">
+                    <label for="bakumpaiInput" data-i18n="modal.inputLabel">Masukkan Kata:</label>
+                    <input type="text" id="bakumpaiInput" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="bakumpaiOutput" data-i18n="modal.outputLabel">Terjemahan:</label>
+                    <input type="text" id="bakumpaiOutput" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="bakumpaiDirection" data-i18n="modal.directionLabel">Pilih Bahasa:</label>
+                    <select id="bakumpaiDirection" class="form-control" required>
+                        <option value="id_to_bakumpai" data-i18n="modal.idToBakumpai">Indonesia - Bakumpai</option>
+                        <option value="bakumpai_to_id" data-i18n="modal.bakumpaiToId">Bakumpai - Indonesia</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="modal.translateButton">Terjemahkan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dusun Witu Translation Modal -->
+    <div class="modal" id="dusunModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeDusunModal">
+                <i class="fas fa-times"></i>
+            </div>
+            <h3 class="modal-title" data-i18n="modal.dusunTitle">TERJEMAHAN DUSUN WITU</h3>
+            <form id="dusunForm">
+                <div class="form-group">
+                    <label for="dusunInput" data-i18n="modal.inputLabel">Masukkan Kata:</label>
+                    <input type="text" id="dusunInput" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="dusunOutput" data-i18n="modal.outputLabel">Terjemahan:</label>
+                    <input type="text" id="dusunOutput" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dusunDirection" data-i18n="modal.directionLabel">Pilih Bahasa:</label>
+                    <select id="dusunDirection" class="form-control" required>
+                        <option value="id_to_dusun" data-i18n="modal.idToDusun">Indonesia - Dusun Witu</option>
+                        <option value="dusun_to_id" data-i18n="modal.dusunToId">Dusun Witu - Indonesia</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="modal.translateButton">Terjemahkan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ma'anyan Translation Modal -->
+    <div class="modal" id="maanyanModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeMaanyanModal">
+                <i class="fas fa-times"></i>
+            </div>
+            <h3 class="modal-title" data-i18n="modal.maanyanTitle">TERJEMAHAN MA'ANYAN</h3>
+            <form id="maanyanForm">
+                <div class="form-group">
+                    <label for="maanyanInput" data-i18n="modal.inputLabel">Masukkan Kata:</label>
+                    <input type="text" id="maanyanInput" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="maanyanOutput" data-i18n="modal.outputLabel">Terjemahan:</label>
+                    <input type="text" id="maanyanOutput" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="maanyanDirection" data-i18n="modal.directionLabel">Pilih Bahasa:</label>
+                    <select id="maanyanDirection" class="form-control" required>
+                        <option value="id_to_maanyan" data-i18n="modal.idToMaanyan">Indonesia - Maanyan</option>
+                        <option value="maanyan_to_id" data-i18n="modal.maanyanToId">Maanyan - Indonesia</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="modal.translateButton">Terjemahkan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ngaju Translation Modal -->
+    <div class="modal" id="ngajuModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeNgajuModal">
+                <i class="fas fa-times"></i>
+            </div>
+            <h3 class="modal-title" data-i18n="modal.ngajuTitle">TERJEMAHAN NGAJU</h3>
+            <form id="ngajuForm">
+                <div class="form-group">
+                    <label for="ngajuInput" data-i18n="modal.inputLabel">Masukkan Kata:</label>
+                    <input type="text" id="ngajuInput" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="ngajuOutput" data-i18n="modal.outputLabel">Terjemahan:</label>
+                    <input type="text" id="ngajuOutput" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="ngajuDirection" data-i18n="modal.directionLabel">Pilih Bahasa:</label>
+                    <select id="ngajuDirection" class="form-control" required>
+                        <option value="id_to_ngaju" data-i18n="modal.idToNgaju">Indonesia - Ngaju</option>
+                        <option value="ngaju_to_id" data-i18n="modal.ngajuToId">Ngaju - Indonesia</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="modal.translateButton">Terjemahkan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-title">
+            <h2 data-i18n="contact.title">Kontak</h2>
+            <p data-i18n="contact.subtitle">Hubungi ahli penerjemahan kami</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact.location">Lokasi</h3>
+                        <p>Buntok, Kalimantan Tengah, Indonesia</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact.email">Email</h3>
+                        <a href="mailto:reinakubaresa@gmail.com">reinakubaresa@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3 data-i18n="contact.phone">Telepon</h3>
+                        <a href="tel:+628125811770">+62 516 2664 395</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.form.name">Nama Anda</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.form.email">Email Anda</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.form.message">Pesan Anda</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.form.submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Ron & Rei</h3>
+                <p data-i18n="footer.description">Melestarikan warisan linguistik Kalimantan melalui layanan terjemahan profesional.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100004115717056" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/baronkylorond" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/baronnnd_/?next=%2F" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ronaldo-dwi-anaku-aminu-119a79226/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.services">Layanan</h3>
+                <ul>
+                    <li><a href="#" data-i18n="services.bakumpai.title">Terjemahan Bakumpai</a></li>
+                    <li><a href="#" data-i18n="services.dusun.title">Terjemahan Dusun</a></li>
+                    <li><a href="#" data-i18n="services.maanyan.title">Terjemahan Ma'anyan</a></li>
+                    <li><a href="#" data-i18n="services.ngaju.title">Terjemahan Ngaju</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.quickLinks">Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Tentang</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Layanan</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <a href="#" style="color: white;">Reinaku Baresha.</a> <span data-i18n="footer.rights">Hak Cipta Dilindungi.</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
